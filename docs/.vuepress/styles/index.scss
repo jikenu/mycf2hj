@@ -1,0 +1,21 @@
+.vp-blogger-avatar {
+    border-radius: 50%;
+}
+.vp-blog-hero {
+    height: 500px;
+}
+.vp-navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.vp-blog-hero {
+    color: rgba(59, 108, 244, 0.6);
+}
+// 日间  背景色  
+:root {
+    --bg-color-back: rgba(220, 220, 220, 0.2);
+}
+
+// 夜间背景色
+html[data-theme=dark] {
+    --bg-color-back: rgba(10, 10, 10, 0.4);
+}
