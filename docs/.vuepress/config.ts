@@ -32,7 +32,7 @@ export default defineUserConfig({
       { text: '首页', link: '/', },
       { text: 'Music', link: '/article/audio/Music.md' },
       { text: 'Video', link: '/article/video/Video.md' },
-      { text: 'Cloudflare', link: '/article/cloudflare/' },
+      { text: 'Cloudflare', link: '/article/cloudflare/pages/pages1.md' },
       { text: '计算机深入', link: '/article/com408/' },
       {
         text: 'Java',
@@ -113,8 +113,16 @@ export default defineUserConfig({
           collapsible: false,
           children: [
             {
+              text: "pages",
+
+              collapsible: false,
+              children: [
+                { text: 'pages与blog部署', link: '/article/cloudflare/pages/pages1.md' },
+              ]
+            },
+            {
               text: "workers",
-              collapsible: true,
+              collapsible: false,
               // link: "/article/test.md",
               children: [   // 子菜单
                 { text: "hel2", link: "/article/cloudflare/workers/hel2.md", },
@@ -124,14 +132,14 @@ export default defineUserConfig({
             },
             {
               text: "site",
-              collapsible: true,
+              collapsible: false,
               children: [
                 { text: 'site1', link: '/article/cloudflare/site/site1.md' }
               ],
             },
             {
               text: "fofa",
-              collapsible: true,
+              collapsible: false,
               children: [
                 { text: 'fofa', link: '/article/cloudflare/fofa/fofa.md' }
               ],   //子菜单
