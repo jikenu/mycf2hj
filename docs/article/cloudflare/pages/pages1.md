@@ -32,6 +32,8 @@ pages  & Blog 部署日志
 
 2.   部署到 cloudflare
 
+   注意将yml自动部署流改为txt  无需自动部署
+
    创建pages仓库
 
    构建命令： pnpm run docs:build
