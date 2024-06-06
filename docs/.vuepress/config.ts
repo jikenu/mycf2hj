@@ -8,7 +8,12 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Home Blog',
   description: 'My first VuePress Site',
-
+  // 设置网站 favicon.ico 图标
+  head: [
+    [
+      'link', {rel: 'icon', href: '/img/logo.png'}
+    ]
+  ],
   bundler: viteBundler(),
   theme: hopeTheme({
     // 'https://vuejs.press/images/hero.png'
