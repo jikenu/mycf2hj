@@ -1,4 +1,4 @@
-import { hopeTheme } from "vuepress-theme-hope"
+import { hopeTheme, ArticleInfo, PageInfo } from "vuepress-theme-hope"
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { Page } from "vuepress/core";
@@ -20,14 +20,13 @@ export default defineUserConfig({
     logo: '/img/top.png',     //  top导航栏左侧图标
     darkmode: "toggle",
     // hotReload: true,
-
+  
     //  主页个人信息配置
     blog: {
       name: "jokenum0",
       avatar: "/img/photo.png",
       description: "暂时没有想法",
       articlePerPage: 8,
-
     },
     navbarLayout: {
       start: ["Brand"], center: [], end: ["Links", "Search", "Language", "Repo", "Outlook"]
@@ -136,14 +135,14 @@ export default defineUserConfig({
               ],
             },
             {
-              text: "site",
+              text: "网站整合",
               collapsible: false,
               children: [
-                { text: 'site1', link: '/article/cloudflare/site/site1.md' }
+                { text: 'cloudflare博客', link: '/article/cloudflare/site/site1.md' }
               ],
             },
             {
-              text: "fofa",
+              text: "fofa语句整理",
               collapsible: false,
               children: [
                 { text: 'fofa', link: '/article/cloudflare/fofa/fofa.md' }
@@ -199,6 +198,7 @@ export default defineUserConfig({
         filter: (page: Page) => page.path.startsWith("/article") && !page.path.startsWith("/article/audio")
           && !page.path.startsWith("/article/video"),
       },
+      
       mdEnhance: {
         component: true        //  可在md中 通过 ```组件名```  添加组件 （须client注册）
       },
