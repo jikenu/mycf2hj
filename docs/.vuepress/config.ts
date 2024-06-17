@@ -51,10 +51,11 @@ export default defineUserConfig({
       },
       {
         text: "项目总结",
-        children: [
-          { text: "Rpc示例", link: "/article/java/project/Rpc.md"},
-          { text: "ORM示例", link: "/article/java/project/ORM.md"},
-        ]
+        link: "/article/java/project/Rpc.md",
+        // children: [
+        //   { text: "Rpc示例", link: "/article/java/project/Rpc.md"},
+        //   { text: "ORM示例", link: "/article/java/project/ORM.md"},
+        // ]
       }
     ],
 
@@ -188,6 +189,8 @@ export default defineUserConfig({
           children: [
             { text: "Rpc示例", link: "/article/java/project/Rpc.md"},
             { text: "ORM示例", link: "/article/java/project/ORM.md"},
+            { text: "NetDisk1", link: "/article/java/project/NetDisk1.md"},
+            { text: "NetDisk2", link: "/article/java/project/NetDisk2.md"},
           ]
         }
       ]
