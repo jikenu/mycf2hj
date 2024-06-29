@@ -18,11 +18,13 @@ CM群中的优选订阅器汇总
 
 **VLESS快速体验订阅地址**：
 `https://VLESS.fxxk.dedyn.io/auto`
+
 **VLESS自定义订阅详细使用方法**：
 `https://VLESS.fxxk.dedyn.io/sub?host=[自定义/cf给的域名]&uuid=[UUID]&path=[ws路径]`
 
 **VMess快速体验订阅地址：**
 `https://VMess.fxxk.dedyn.io/auto`
+
 **VMess自定义订阅**详细使用方法：
 `https://VMess.fxxk.dedyn.io/sub?cc=[VMess服务名字]&host=[自定义/cf给的域名]&uuid=[UUID]&path=[ws路径]&alterid=[额外ID]&security=[加密方式]`
 
