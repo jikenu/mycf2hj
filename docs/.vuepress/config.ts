@@ -122,7 +122,9 @@ export default defineUserConfig({
 
               collapsible: false,
               children: [
-                { text: 'pages与blog部署', link: '/article/cloudflare/pages/pages1.md' },
+                { text: 'blog日志', link: '/article/cloudflare/pages/pages1.md' },
+                { text: '优选订阅器', link: '/article/cloudflare/pages/subreader.md' },
+                { text: '反代IP', link: '/article/cloudflare/pages/proxyip.md' },
               ]
             },
             {
