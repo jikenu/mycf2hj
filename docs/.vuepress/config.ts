@@ -26,7 +26,7 @@ export default defineUserConfig({
       name: "jokenum0",
       avatar: "/img/photo.png",
       description: "暂时没有想法",
-      articlePerPage: 8,
+      articlePerPage: 8,  // 首页 每页文章数
     },
     navbarLayout: {
       start: ["Brand"], center: [], end: ["Links", "Search", "Language", "Repo", "Outlook"]
@@ -34,8 +34,8 @@ export default defineUserConfig({
 
     navbar: [
       { text: '首页', link: '/', },
-      { text: 'Music', link: '/article/audio/Music.md' },
-      { text: 'Video', link: '/article/video/Video.md' },
+      { text: '组件测试', link: '/article/audio/Music.md' },
+      // { text: 'Video', link: '/article/video/Video.md' },
       { text: 'Cloudflare', link: '/article/cloudflare/pages/pages1.md' },
       { text: '计算机深入', link: '/article/com408/' },
       {
@@ -46,6 +46,8 @@ export default defineUserConfig({
           { text: "Spring生态", link: "/article/java/spring/", },
           { text: '数据及框架', link: '/article/java/datasource/' },
           { text: '中间件', link: '/article/java/中间件/' },
+          { text: '算法', link: '/article/java/算法/Algorithm.md'},
+          { text: '常见Api', link: '/article/java/api/'},
           { text: "ClassUtils", link: "/article/java/utils/utilClass.md", },
         ]
       },
@@ -193,6 +195,15 @@ export default defineUserConfig({
             { text: "ORM示例", link: "/article/java/project/ORM.md"},
             { text: "NetDisk1", link: "/article/java/project/NetDisk1.md"},
             { text: "NetDisk2", link: "/article/java/project/NetDisk2.md"},
+          ]
+        }
+      ],
+      '/article/java/api/': [
+        {
+          text: "常用Api",
+          children: [
+            { text: "Java", link: "/article/java/api/Java-Api.md"},
+            { text: "Mysql", link: "/article/java/api/sql函数.md"},
           ]
         }
       ]
